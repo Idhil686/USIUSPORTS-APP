@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "67929931661",
+    "project_id": "usiusportsapp-af947",
+    "storage_bucket": "usiusportsapp-af947.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67929931661:android:5a37b42ee0c9088361c7c4",
+        "android_client_info": {
+          "package_name": "com.example.linearlayout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXNVMtNnq1muwbWa8Grc-F9WaMjdftkiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

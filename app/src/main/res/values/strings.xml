@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LinearLayout</string>
+
+    <string name="aboutBB">Basketball is a fast-paced team sport where two teams of five players each aim to score points by shooting a ball through the opponent’s hoop.</string>
+
+    <string name="aboutVB">Volleyball is a team sport played by two teams of six players, separated by a net. Each team tries to score points by grounding the ball on the opponent\'s side of the court.</string>
+
+    <string-array name="schools">
+        <item>school of Technology</item>
+        <item>school of Business</item>
+        <item>school of Medicine</item>
+        <item>school of Humanities</item>
+    </string-array>
+</resources>

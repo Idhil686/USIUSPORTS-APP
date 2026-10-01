@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/volleyballAccent"
+    tools:context=".applyToVolleyballTeam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_volleyball"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volleyball Player Registration"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/vbplayername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add full Names"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/vbposition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Playing position"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select gender"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginBottom="6dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGenderVB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/radioMaleVB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="male" />
+
+                <RadioButton
+                    android:id="@+id/radioFemaleVB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="female"
+                    android:layout_marginStart="20dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select school"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/selectschoolVB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/schools"
+                android:background="@color/white"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/btnApplyVB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apply"
+                android:textColor="@color/volleyballDark"
+                android:backgroundTint="@color/volleyballAccent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

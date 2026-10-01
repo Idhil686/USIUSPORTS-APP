@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Basketball theme -->
+    <color name="basketballPrimary">#FF5722</color>
+    <color name="basketballDark">#BF360C</color>
+    <color name="basketballLight">#FFE0D6</color>
+
+    <!-- Volleyball theme -->
+    <color name="volleyballPrimary">#1565C0</color>
+    <color name="volleyballDark">#0D47A1</color>
+    <color name="volleyballAccent">#FFC107</color>
+    <color name="volleyballLight">#E3F2FD</color>
+
+    <!-- shared neutrals -->
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="screenBackground">#F5F5F5</color>
+    <color name="textGrey">#666666</color>
+
+    <color name="basketballBackground">#FFF3EC</color>
+    <color name="volleyballBackground">#EAF2FB</color>
+    <color name="appBackground">#F3F1EC</color>
+</resources>

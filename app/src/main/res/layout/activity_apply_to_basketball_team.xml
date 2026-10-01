@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basketballBackground"
+    tools:context=".applyToBasketballTeam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_basketball"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_basketball"
+                android:background="@drawable/circle_basketball"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basketball Player Registration"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/bbplayername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:background="@color/white"
+                android:padding="14dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/bbposition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Playing Position"
+                android:background="@color/white"
+                android:padding="14dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Gender"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="6dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/redioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_marginStart="20dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select School"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/selectschool"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/schools"
+                android:background="@color/white"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/btnApplyBB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apply"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/basketballPrimary" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

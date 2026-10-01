@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context=".userDashboard">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_dashboard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/gradient_dashboard_fade"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/dashboardTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="USIU Sports App"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/dashboardSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Choose a team to view details and players"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/dashboardTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Basketball card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBasketball"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_basketball">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_basketball" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basketball"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/basketballDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to view team details"
+                    android:textSize="13sp"
+                    android:textColor="@color/textGrey" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Volleyball card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVolleyball"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/cardBasketball"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_volleyball">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_volleyball" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Volleyball"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/volleyballDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to view team details"
+                    android:textSize="13sp"
+                    android:textColor="@color/textGrey" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
